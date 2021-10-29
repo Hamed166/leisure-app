@@ -13,8 +13,8 @@ const Header = () => {
                 
                     <ul className="nav-list flex flex-row mx-4 text-base">
                         <li className="nav-list-item text-blue-400 p-4 mx-4 uppercase"><NavLink to="/home">Home</NavLink></li>
-                        <li className="nav-list-item text-indigo-900 p-4 mx-4 uppercase"><NavLink to="/doctors">Tours</NavLink></li>
-                        <li className="nav-list-item text-indigo-900 p-4 mx-4 uppercase"><NavLink to="/about">Destinations</NavLink></li>
+                        <li className="nav-list-item text-indigo-900 p-4 mx-4 uppercase"><NavLink to="/tours">Tours</NavLink></li>
+                        <li className="nav-list-item text-indigo-900 p-4 mx-4 uppercase"><NavLink to="/destinations">Destinations</NavLink></li>
                         <li className="nav-list-item text-indigo-900 p-4 mx-4 uppercase"><NavLink to="/blog">Blog</NavLink></li>
                         <li className="nav-list-item text-indigo-900 p-4 mx-4 uppercase"><NavLink to="/services">Pages</NavLink></li>
                         <li className="nav-list-item text-indigo-900 p-4 mx-4 uppercase"><NavLink to="/contact">Contact</NavLink></li>
