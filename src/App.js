@@ -16,47 +16,52 @@ import Blog from './Pages/Home/Blog/Blog';
 import Contact from './Pages/Contact/Contact';
 import Login from './Pages/Login/Login';
 import Tours from './Pages/Home/Tours/Tours';
+import TourDetails from './Pages/Tour Details/TourDetails';
+import AuthProvider from './Context/AuthProvider';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-      <Header></Header>
-          <Switch>
-            <Route exact path="/">
-              <Home></Home>
-            </Route>
-            <Route path="/home">
-              <Home></Home>
-            </Route>
-            <Route exact path="/booking">
-                <Booking></Booking>
-              </Route>
-              <Route exact path="/tours">
-                <Tours></Tours>
-              </Route>
-              <Route exact path="/destinations">
-                <Destinations></Destinations>
-              </Route>
-              {/* <Route path="/serviceinfo/:serviceId">
-                <ServiceDetails></ServiceDetails>
-              </Route> */}
-              <Route exact path="/blog">
-                <Blog></Blog>
-              </Route>
-              <Route exact path="/contact">
-                <Contact></Contact>
-              </Route>
-              <Route exact path="/login">
-                <Login></Login>
-              </Route>
-              <Route path="*">
-                <PageNotFound></PageNotFound>
-              </Route>
-          </Switch>
-          <Footer></Footer>
-      </BrowserRouter>
+        <AuthProvider>
+            <BrowserRouter>
+            <Header></Header>
+                <Switch>
+                      <Route exact path="/">
+                        <Home></Home>
+                      </Route>
+                      <Route path="/home">
+                        <Home></Home>
+                      </Route>
+                      <Route exact path="/booking">
+                        <Booking></Booking>
+                      </Route>
+                      <Route exact path="/tours">
+                        <Tours></Tours>
+                      </Route>
+                      <Route exact path="/destinations">
+                        <Destinations></Destinations>
+                      </Route>
+                      <PrivateRoute path="/tourinfo/:tourId">
+                        <TourDetails></TourDetails>
+                      </PrivateRoute>
+                      <Route exact path="/blog">
+                        <Blog></Blog>
+                      </Route>
+                      <Route exact path="/contact">
+                        <Contact></Contact>
+                      </Route>
+                      <Route exact path="/login">
+                        <Login></Login>
+                      </Route>
+                      <Route path="*">
+                        <PageNotFound></PageNotFound>
+                      </Route>
+                </Switch>
+              <Footer></Footer>
+          </BrowserRouter>
+        </AuthProvider>
     </div>
   );
 }
