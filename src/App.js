@@ -4,16 +4,18 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   BrowserRouter
 } from "react-router-dom";
 import Home from './Pages/Home/Home/Home';
+import Header from './Pages/Shared/Header/Header';
+import Footer from './Pages/Shared/Footer/Footer';
 
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <Header></Header>
           <Switch>
             <Route exact path="/">
               <Home></Home>
@@ -22,6 +24,7 @@ function App() {
               <Home></Home>
             </Route>
           </Switch>
+          <Footer></Footer>
       </BrowserRouter>
     </div>
   );
