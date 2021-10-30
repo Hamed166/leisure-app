@@ -54,8 +54,8 @@ const Footer = () => {
             
             <div className="container mx-auto px-12">
             <div className="grid lg:grid-cols-2 grid-cols-1 justify-between ">
-                    <div className="brand-logo font-bold text-3xl flex p-2">
-                        <h2 className="text-yellow-400"><span className="text-blue-500 text-4xl">Travellers</span></h2>
+                    <div className="brand-logo font-bold text-4xl flex p-2">
+                        <h2 className="text-white"><span className="text-red-500 text-4xl">T</span>ravellers</h2>
                     </div>
                     <div> <p className="p-4 text-gray-400">@ Copyright reserved to PHero.Team Crafted by <span className="text-yellow-400">react-hero</span></p></div>
                 </div>

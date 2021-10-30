@@ -6,26 +6,16 @@ import {  faLightbulb, faPhone, faUserNurse } from '@fortawesome/free-solid-svg-
 const Banner = () => {
     return (
         <div className="bg-gray-50">
-            <h2 className="bg-gray-50 text-center text-4xl text-blue-400  font-thin  uppercase">About Us</h2>
+            
             <div className="">
             
-                <div className="">
-                
-                    {/* <div className=" px-4 text-justify mr-16">
-                        <span className=" font-bold text-xl text-gray-600">Welcome to Medicenter</span>
-                        <h3 className="text-4xl text-justify text-thin my-4 mt-2"><span className="text-red-300 font-bold"> Medicare</span> holds the privilage of being Chittagong's first choice hospital to care your family</h3>
-                       
-                        <p className="my-4 text-gray-600 text-justify mt-2">Since its founding we become an integral part of the city, advancing our mission of providing access to compassionate care to our communities. Today patients find care that combines world-class medicine with compassion.</p>
-
-                        <div className="mb-4 mt-2">
-                        <button className="text-white text-base bg-blue-400 hover:bg-green-400  hover:-translate-y-1 hover:scale-110 bg-yellow-400 py-4 px-4 rounded-md">Fix an Appoinment</button>
-                        <Link to="/services"><button className="text-white text-base my-2 mx-8 bg-yellow-400 hover:bg-green-400  hover:-translate-y-1 hover:scale-110 bg-blue-400 py-4 px-4 rounded-md">View Services</button></Link>
+                    <div className=" container mx-auto bg-gray-500 w-full mt-16 p-4 relative ">
+                        <img className="object-cover w-full h-auto" src="https://cdn.pixabay.com/photo/2020/10/01/02/49/sunset-5617413_960_720.jpg" alt="bg-img"/>
+                        <div class=" w-1/2 h-1/2 absolute top-1/4 left-1/4 rounded-lg p-4">
+                            <h2 className="text-4xl text-white font-bold">This is about page</h2>
                         </div>
-                    </div> */}
-                    <div className=" mt-2 ">
-                        <img className="w-full h-50 bg-cover bg-left bg-fixed" src="https://cdn.pixabay.com/photo/2020/10/01/02/49/sunset-5617413_960_720.jpg" alt=""/>
                     </div>
-                </div>
+                
             </div>
 
             

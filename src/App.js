@@ -19,6 +19,8 @@ import Tours from './Pages/Home/Tours/Tours';
 import TourDetails from './Pages/Tour Details/TourDetails';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import MyBooking from './Pages/Booking/MyBooking/MyBooking';
+import BookNew from './Pages/Booking/BookNew/BookNew';
 
 
 function App() {
@@ -48,6 +50,12 @@ function App() {
                       </PrivateRoute>
                       <Route exact path="/blog">
                         <Blog></Blog>
+                      </Route>
+                      <Route exact path="/mybooking">
+                        <MyBooking></MyBooking>
+                      </Route>
+                      <Route exact path="/booknew">
+                        <BookNew></BookNew>
                       </Route>
                       <Route exact path="/contact">
                         <Contact></Contact>

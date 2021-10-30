@@ -1,17 +1,23 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
-import './PrivateRoute.css'
+
+
 
 const PrivateRoute = ({ children, ...rest }) => {
     const {user, isLoading} = useAuth();
-    console.log(user);
+    
     if(isLoading){
-        return <div className="min-h-screen flex justify-center items-center bg-black">
-                    <div className="loader bg-white p-5 rounded-full flex space-x-3">
-                        <div className="w-5 h-5 bg-gray-800 rounded-full animate-bounce"></div>
-                        <div className="w-5 h-5 bg-gray-800 rounded-full animate-bounce"></div>
-                        <div className="w-5 h-5 bg-gray-800 rounded-full animate-bounce"></div>
+        return <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
+                    <div class="animate-pulse flex space-x-4">
+                    <div class="rounded-full bg-blue-400 h-12 w-12"></div>
+                    <div class="flex-1 space-y-4 py-1">
+                        <div class="h-4 bg-blue-400 rounded w-3/4"></div>
+                        <div class="space-y-2">
+                        <div class="h-4 bg-blue-400 rounded"></div>
+                        <div class="h-4 bg-blue-400 rounded w-5/6"></div>
+                        </div>
+                    </div>
                     </div>
                 </div>
     }
