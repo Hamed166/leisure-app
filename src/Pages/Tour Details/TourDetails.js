@@ -4,20 +4,20 @@ import { NavLink } from 'react-router-dom';
 import useAuth from '../Hooks/useAuth';
 
 const TourDetails = () => {
-    const {tourId}= useParams()
+    const {tourId}= useParams();
     const [tourInfo, setTourInfo]= useState([]);
     const {user}= useAuth();
 
 
 
     useEffect(()=>{
-        fetch('/ToursData.json')
+        fetch(`http://localhost:5000/tours/${tourId}`)
         .then(res =>res.json())
         .then(data=> setTourInfo(data))
 
     },[])
    
-    const detail = tourInfo.find((x)=>x.index == tourId)
+    // const detail = tourInfo.find((x)=>x.index === tourId)
         return (
             <div  className="container mx-auto px-20 mt-24 ">
                 <div className="justify-center mb-8">
@@ -33,9 +33,9 @@ const TourDetails = () => {
                     <div>
                         <h2 className="text-5xl text-red-400">Your Destination {tourId}</h2>
                         <div className="">
-                            <img src={detail?.picture} alt=""/>
-                            <h2  className=" text-4xl font-bold">{detail?.name}</h2>
-                            <p>{detail?.description}</p>
+                            <img src={tourInfo?.img} alt=""/>
+                            <h2  className=" text-4xl font-bold">{tourInfo?.name}</h2>
+                            <p>{tourInfo?.description}</p>
                         </div>
                     </div>
                     <div>

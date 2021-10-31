@@ -9,22 +9,21 @@ const useFirebase = () =>{
     const [user, setUser]= useState({});
     const [isLoading, setIsLoading]= useState(true);
     const auth = getAuth();
+    const googleProvider = new GoogleAuthProvider();
 
     const signInUsingGoogle=()=>{
-        setIsLoading(true);
-        const googleProvider = new GoogleAuthProvider();
-    
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-            setUser(result.user);
-  })
-  .finally(() => setIsLoading(false));
+        
+        
+      return  signInWithPopup(auth, googleProvider)
+            
+  
+  
     }
     
 //observe user's state change.............
 
     useEffect(()=>{
-      const unsubscribed = onAuthStateChanged(auth,  user =>{
+      const unsubscribed = onAuthStateChanged(auth, (user) =>{
             if(user){
                 setUser(user);
             }else{
@@ -45,6 +44,8 @@ const useFirebase = () =>{
     return{
         user,
         isLoading,
+        setIsLoading,
+        setUser,
         signInUsingGoogle,
         logOut
     }

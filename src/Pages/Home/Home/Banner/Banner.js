@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faLightbulb, faPhone, faUserNurse } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,7 +10,7 @@ const Banner = () => {
             
                     <div className=" container mx-auto bg-gray-500 w-full mt-16 p-4 relative ">
                         <img className="object-cover w-full h-auto" src="https://cdn.pixabay.com/photo/2020/10/01/02/49/sunset-5617413_960_720.jpg" alt="bg-img"/>
-                        <div class=" w-1/2 h-1/2 absolute top-1/4 left-1/4 rounded-lg p-4">
+                        <div className=" w-1/2 h-1/2 absolute top-1/4 left-1/4 rounded-lg p-4">
                             <h2 className="text-4xl text-white font-bold">This is about page</h2>
                         </div>
                     </div>

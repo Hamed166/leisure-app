@@ -19,23 +19,16 @@
       "longitude": -82.219293
     },
     {
-      "_id": "616b1b8f643661a414defd93",
+      
       "index": 1,
-      "guid": "764b34aa-addb-423a-9cc2-5ea96dae3c4a",
-      "isActive": true,
       "balance": "$9.99",
       "picture": "https://i.ibb.co/3yj0dMX/orthopedic.jpg",
-      "age": 20,
-      "eyeColor": "green",
       "name": "Orthopedic",
       "description": " Arthroscopic and Minimally Invasive Surgical Interventions for the Knee and Shoulde",
-      "company": "PYRAMAX",
       "email": "perkinsmelendez@pyramax.com",
       "phone": "+1 (902) 500-2958",
-      "address": "648 Lott Place, Taft, Federated States Of Micronesia, 9064",
-      "about": "Do anim anim mollit amet nostrud reprehenderit enim do nulla sit amet. Reprehenderit ut ut minim eu qui incididunt velit aute dolor velit ea ullamco reprehenderit do. Dolore excepteur cupidatat Lorem nostrud veniam qui reprehenderit elit enim sit minim voluptate occaecat. Id laborum labore deserunt ipsum eiusmod ipsum Lorem pariatur. Consequat esse enim ullamco dolore irure amet do.\r\n",
-      "latitude": -55.448919,
-      "longitude": 55.644707
+      "address": "648 Lott Place, Taft, Federated States Of Micronesia, 9064"
+     
     },
     {
       "_id": "616b1b8fa44203a14974c545",

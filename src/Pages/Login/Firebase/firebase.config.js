@@ -1,11 +1,11 @@
-
+console.log(process.env);
 const firebaseConfig = {
-    apiKey: "AIzaSyBdWFEjrnnAAXvMIQWZRz6ByuFl-0pbbD4",
-    authDomain: "medicare-5995f.firebaseapp.com",
-    projectId: "medicare-5995f",
-    storageBucket: "medicare-5995f.appspot.com",
-    messagingSenderId: "555406722551",
-    appId: "1:555406722551:web:9424e18c9988a907f21af2"
-  };
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+};
   
-    export default firebaseConfig;
+  export default firebaseConfig;

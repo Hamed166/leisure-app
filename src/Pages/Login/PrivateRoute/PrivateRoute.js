@@ -1,6 +1,7 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
+import './PrivateRoute.css'
 
 
 
@@ -8,17 +9,10 @@ const PrivateRoute = ({ children, ...rest }) => {
     const {user, isLoading} = useAuth();
     
     if(isLoading){
-        return <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
-                    <div class="animate-pulse flex space-x-4">
-                    <div class="rounded-full bg-blue-400 h-12 w-12"></div>
-                    <div class="flex-1 space-y-4 py-1">
-                        <div class="h-4 bg-blue-400 rounded w-3/4"></div>
-                        <div class="space-y-2">
-                        <div class="h-4 bg-blue-400 rounded"></div>
-                        <div class="h-4 bg-blue-400 rounded w-5/6"></div>
-                        </div>
-                    </div>
-                    </div>
+        return <div wireloading className="fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-gray-700 opacity-75 flex flex-col items-center justify-center">
+                    <div className="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div>
+                    <h2 className="text-center text-white text-xl font-bold">Loading</h2>
+                    <p className="w-1/3 text-center text-white">This may take a few seconds, please don't close this page.</p>
                 </div>
     }
     return (

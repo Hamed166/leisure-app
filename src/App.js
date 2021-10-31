@@ -13,7 +13,6 @@ import PageNotFound from './Pages/PageNotFound/PageNotFound';
 import Booking from './Pages/Booking/Booking';
 import Destinations from './Pages/Home/Home/Destinations/Destinations';
 import Blog from './Pages/Home/Blog/Blog';
-import Contact from './Pages/Contact/Contact';
 import Login from './Pages/Login/Login';
 import Tours from './Pages/Home/Tours/Tours';
 import TourDetails from './Pages/Tour Details/TourDetails';
@@ -21,6 +20,7 @@ import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import MyBooking from './Pages/Booking/MyBooking/MyBooking';
 import BookNew from './Pages/Booking/BookNew/BookNew';
+import AddTour from './Pages/AddTour/AddTour';
 
 
 function App() {
@@ -57,8 +57,8 @@ function App() {
                       <Route exact path="/booknew">
                         <BookNew></BookNew>
                       </Route>
-                      <Route exact path="/contact">
-                        <Contact></Contact>
+                      <Route  path="/addTour">
+                        <AddTour></AddTour>
                       </Route>
                       <Route exact path="/login">
                         <Login></Login>

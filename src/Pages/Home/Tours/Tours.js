@@ -5,7 +5,7 @@ const Tours = () => {
     const [tours, setTours] = useState([]);
 
     useEffect(()=>{
-        fetch('/toursData.json')
+        fetch('http://localhost:5000/tours')
         .then(res=> res.json())
         .then(data => setTours(data))
     },[])
@@ -15,7 +15,7 @@ const Tours = () => {
        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
        {
             tours.map(tour =><Tour 
-                key ={tour.index}
+                key ={tour._id}
                 tour={tour}
             ></Tour>)
         }
