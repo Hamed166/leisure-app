@@ -1,0 +1,12 @@
+.managebooking{
+    margin-top: 100px;
+}
+.manageOder{
+    display: flex;
+    justify-content: space-around;
+    margin: 7px 0;
+    padding: 9px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}

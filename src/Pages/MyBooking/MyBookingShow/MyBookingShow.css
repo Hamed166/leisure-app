@@ -1,0 +1,18 @@
+.booking-info{
+    display:flex;
+    justify-content: space-around;
+}
+.booking-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+}
+.all-btn{
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    background: #fff;
+    color: #191919;
+    border: 1px solid #dd0101;
+    border-radius: 10px;
+}

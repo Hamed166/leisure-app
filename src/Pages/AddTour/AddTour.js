@@ -1,9 +1,11 @@
+import { getAuth } from '@firebase/auth';
 import axios from 'axios';
 import React from 'react';
 import { useForm } from "react-hook-form";
 
 const AddTour = () => {
     const { register, handleSubmit, reset } = useForm();
+    
 
     const onSubmit = data =>{
         console.log(data);
@@ -23,6 +25,7 @@ const AddTour = () => {
             </div>
            <div>
            <form className=" grid grid-col-1 px-8 shadow p-4" onSubmit={handleSubmit(onSubmit)}>
+               
                 <input className="mt-4 border p-2" {...register("name", { required: true, maxLength: 20 })} placeholder="Name"/>
                 <input className="mt-4 border p-2" {...register("description")} placeholder="Description"/>
                 <input className="mt-4 border p-2" type="number" {...register("price")} placeholder="Price" />
