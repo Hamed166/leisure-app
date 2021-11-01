@@ -8,7 +8,7 @@ const Update = () => {
     const {id} = useParams();
     const [data,setData] = useState([])
     useEffect(()=>{
-        fetch(`http://localhost:5000/myBookinged/${id}`)
+        fetch(`https://calm-journey-29870.herokuapp.com/myBookinged/${id}`)
         .then(res=>res.json())
         .then(data=>{
             setData(data)
@@ -35,7 +35,7 @@ const Update = () => {
     const hendelsubmit =(e)=>{
         e.preventDefault()
         console.log(data)
-        fetch(`http://localhost:5000/myBookinged/${id}`,{
+        fetch(`https://calm-journey-29870.herokuapp.com/myBookinged/${id}`,{
             method:'PUT',
             headers:{
                 'content-type':'application/json'

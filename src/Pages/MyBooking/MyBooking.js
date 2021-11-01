@@ -10,7 +10,7 @@ const MyBooking = () => {
     const [book,setbook] = useState([])
     useEffect(()=>{
         
-        fetch(`http://localhost:5000/myBooking/${user?.email}`)
+        fetch(`https://calm-journey-29870.herokuapp.com/myBooking/${user?.email}`)
         
         .then(res=>res.json())
         .then(data=>{

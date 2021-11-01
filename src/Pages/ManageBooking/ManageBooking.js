@@ -5,14 +5,14 @@ const ManageBooking = () => {
     const [user,setUser] = useState([])
     const [load,setLoad] = useState(false)
     useEffect(()=>{
-        fetch('http://localhost:5000/manage')
+        fetch('https://calm-journey-29870.herokuapp.com/manage')
         .then(res=>res.json())
         .then(data=>{
             setUser(data)
         })
     },[load])
     const hendeldelete=id =>{
-        fetch(`http://localhost:5000/manage/${id}`,{
+        fetch(`https://calm-journey-29870.herokuapp.com/manage/${id}`,{
             method:'DELETE'
         })
         .then(res=>res.json())

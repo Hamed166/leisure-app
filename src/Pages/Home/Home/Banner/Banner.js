@@ -8,7 +8,7 @@ const Banner = () => {
             
             <div className="">
             
-                    <div className=" container mx-auto bg-gray-500 w-full mt-16 p-4 relative ">
+                    <div className=" container mx-auto bg-gray-500 w-full mt-16 p-4 relative overflow-hidden ">
                         <img className="object-cover w-full h-auto" src="https://cdn.pixabay.com/photo/2020/10/01/02/49/sunset-5617413_960_720.jpg" alt="bg-img"/>
                         <div className=" w-1/2 h-1/2 absolute top-1/4 left-1/4 rounded-lg p-4">
                             <h2 className="text-4xl text-white font-bold">This is about page</h2>

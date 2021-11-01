@@ -10,7 +10,7 @@ const MyBookingShow = ({booking}) => {
     const hendeldelet = id =>{
        const confirmed = window.confirm('are your sure this item delet')
        if(confirmed){
-        fetch(`http://localhost:5000/myBooking/${id}`,{
+        fetch(`https://calm-journey-29870.herokuapp.com/myBooking/${id}`,{
             method:'DELETE'
         })
         .then(res=>res.json())
